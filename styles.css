@@ -1,0 +1,15 @@
+/* styles.css */
+.ms {
+    font-size: 2em;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+input[type="number"] {
+    text-align: center;
+}
+
+.card {
+    width: 300px;
+    height: 150px;
+}

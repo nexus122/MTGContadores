@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Importar tailwind -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.2/dist/tailwind.min.css">
+    <link href="//cdn.jsdelivr.net/npm/mana-font@latest/css/mana.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Mana Counters</title>
+</head>
+
+<body>
+    <div class="general flex flex-wrap">
+
+    </div>
+    <div>
+        <button onclick="resetGeneral()"
+            class="incrementar bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Reset
+            General</button>
+        <button onclick="multiplyGeneral()"
+            class="decrementar bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">X2 General</button>
+    </div>
+    <script src="manaCounter.js"></script>
+    <script src="general.js"></script>
+</body>
+
+</html>
