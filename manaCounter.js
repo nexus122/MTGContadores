@@ -5,7 +5,7 @@ class ManaCounter {
         this.icon = icon;
         this.number = 0;
         this.manaCounter = `
-            <div class="card contador border p-2" id="${this.id}">
+            <div class="w-full md:w-1/4 card contador border p-2" id="${this.id}">
                 <span class="w-full flex justify-center">
                     <span class="icon"><i class="ms ${this.icon}"></i></span>
                     <input type="number" class="text-5xl w-full" type="text" value="0">
@@ -57,13 +57,3 @@ new ManaCounter('blue', 'ms-u');
 new ManaCounter('black', 'ms-b');
 new ManaCounter('green', 'ms-g');
 new ManaCounter('colorless', 'ms-c');
-
-function resetGeneral(){
-    const general = document.querySelector('.general');
-    general.querySelectorAll('input').forEach(input => input.value = 0);
-}
-
-function multiplyGeneral(){
-    const general = document.querySelector('.general');
-    general.querySelectorAll('input').forEach(input => input.value = input.value * 2);
-}
